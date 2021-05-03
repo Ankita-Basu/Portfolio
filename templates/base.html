@@ -1,0 +1,44 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'pf/css/baseStyle.css' %}">
+    {% block title %}<title>Pagal ka Portfolio</title>{% endblock title %}
+</head>
+<body>
+    <nav>
+    
+        <button id="myButton">Home</button>
+        <button id="aboutButton">About</button>
+        <button id="contactButton">Contact</button>
+
+        
+      
+      
+    </nav>
+{% block content %}
+{% endblock content %}
+<footer>
+    <p>this is footer</p>
+</footer>
+
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "home";
+    };
+    document.getElementById("myButton").onclick = function () {
+        location.href = "about";
+    };
+    document.getElementById("myButton").onclick = function () {
+        location.href = "contact";
+    };
+</script>
+    
+</body>
+</html>
+
+
+

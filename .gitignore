@@ -127,6 +127,7 @@ ENV/
 env.bak/
 venv.bak/
 pythonenv*
+D:\Projects\Portfolio\env
 
 # Spyder project settings
 .spyderproject
